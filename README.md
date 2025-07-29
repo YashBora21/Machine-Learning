@@ -5,41 +5,46 @@ Welcome to the **Machine Learning  Repository**, a comprehensive collection of M
 
 ---
 
-## 📂 File  Structure
+📁 Folder-wise Breakdown
+🔹 HEART_STROKE_PREDICTION
+Predicts the likelihood of heart stroke using logistic regression.
 
-ML/
-├── HEART_STROKE_PREDICTION/ # Logistic Regression on heart disease data
-│ ├── heart.csv
-│ ├── lr.pkl # Trained model
-│ └── scaler.pkl # StandardScaler object
+Trained model (lr.pkl) and scaler (scaler.pkl) are saved for reuse.
 
-├── Insurance_Model_Deployment/ # Flask API to deploy insurance model
-│ ├── app.py
-│ ├── model.pkl
-│ └── pycache/
+Dataset: heart.csv
 
-├── supervised_learning/
-│ ├── classification_models/
-│ │ ├── gridsearch cv.ipynb # Hyperparameter tuning using GridSearchCV
-│ │ ├── randomsearchcv.ipynb # Using RandomizedSearchCV
-│ │ └── titanic_project.ipynb # Titanic dataset classification
+🔹 Insurance_Model_Deployment
+Regression model deployed using Flask.
 
-│ ├── ensemble_learning/
-│ │ ├── adaboost&gradient.ipynb # AdaBoost & GradientBoosting
-│ │ ├── random_forest.ipynb # Random Forest
-│ │ └── stacking.ipynb # Stacking classifier
+Endpoint available via app.py
 
-│ └── regression_models/
-│ ├── heart_Project.ipynb # Regression on heart dataset
-│ ├── heart.csv
-│ ├── insurance.csv
-│ └── lnsurance_Project.ipynb # Regression on insurance dataset
+model.pkl used to serve predictions
 
-└── Unsupervised_Learning/
-└── clusters/
-├── dbScan.ipynb # DBSCAN clustering
-├── kmean.ipynb # KMeans clustering
-└── PCA.ipynb # Principal Component Analysis
+🔹 supervised_learning/classification_models
+titanic_project.ipynb: Survival classification on Titanic dataset
+
+gridsearch cv.ipynb: GridSearchCV hyperparameter tuning
+
+randomsearchcv.ipynb: RandomizedSearchCV demo
+
+🔹 supervised_learning/ensemble_learning
+Adaboost, Gradient Boosting, Random Forest, and Stacking models
+
+Performance comparison across ensemble methods
+
+🔹 supervised_learning/regression_models
+heart_Project.ipynb: Heart dataset regression
+
+lnsurance_Project.ipynb: Predicts medical insurance charges
+
+Includes full preprocessing and model evaluation
+
+🔹 Unsupervised_Learning/clusters
+kmean.ipynb: KMeans clustering visualization
+
+dbScan.ipynb: DBSCAN clustering based on density
+
+PCA.ipynb: Principal Component Analysis for dimensionality reduction
 
 
 ---
